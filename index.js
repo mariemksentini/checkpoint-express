@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 5000;
+const port = 7000;
 
 
 
@@ -26,7 +26,7 @@ app.get('/style.css',(req,res)=>{
     res.sendFile(__dirname+"/public/style.css")
 })
 
-app.get('/home', (req,res,next)=>{
+app.get('/', (req,res,next)=>{
     res.sendFile(__dirname+'/home.html')
 })
 
